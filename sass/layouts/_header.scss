@@ -11,6 +11,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
+    @media screen and (max-width: 768px) {
+        display: none; 
+        }
 }
 .header__item {
     &:not(:last-child) {
@@ -48,7 +51,7 @@
 .header__address {
     margin-left: auto;
 }
-.header__address--grey {
+.header__link--grey {
     display: flex;
     justify-content: center;
     align-items: center;

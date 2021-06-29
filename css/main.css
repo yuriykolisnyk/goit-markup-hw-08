@@ -349,7 +349,8 @@ img {
   color: var(--color-white);
 }
 
-.logo__text--blue {
+.logo__header--blue,
+.logo__footer--blue {
   color: var(--color-main-blue);
 }
 
@@ -744,6 +745,12 @@ img {
   line-height: 1.17;
 }
 
+@media screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+}
+
 .header__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -784,7 +791,7 @@ img {
   margin-left: auto;
 }
 
-.header__address--grey {
+.header__link--grey {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,6 +891,12 @@ img {
 /* СТУДИЯ - НАШИ РЕШЕНИЯ*/
 .solutions {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .solutions {
+    display: none;
+  }
 }
 
 .solutions__item {
