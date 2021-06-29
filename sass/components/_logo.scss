@@ -1,0 +1,22 @@
+/* ЛОГОТИП */
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-accent);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.17;
+}
+.logo__header {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--color-black);
+}
+.logo__footer {
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+.logo__text--blue {
+    color: var(--color-main-blue);
+}

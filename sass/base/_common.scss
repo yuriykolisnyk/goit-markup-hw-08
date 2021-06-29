@@ -1,0 +1,28 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    font-family: var(--font-main);
+    color: var(--color-black-text);
+    background-color: var(--color-white);
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

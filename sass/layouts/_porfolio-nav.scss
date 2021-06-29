@@ -1,0 +1,38 @@
+/* ПОРТФОЛИО */
+/* КНОПКИ НА ПРИМЕРЫ РАБОТ */
+.porfolio-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.porfolio-nav__item {
+    &:not(:last-child) {
+        margin-right: 8px;
+        }
+}
+.button__portfolio--current,
+.button__portfolio {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em; 
+    color: var(--color-black-text);
+    box-shadow: none;
+    background-color: var(--color-background-grey);
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var( --color-main-blue);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 3px 1px rgba(0, 0, 0, 0.1);
+            }
+}
+.button__portfolio--current {
+    color: var(--color-white);
+    background-color: var( --color-main-blue);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}

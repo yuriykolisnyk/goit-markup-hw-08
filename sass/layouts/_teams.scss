@@ -1,0 +1,35 @@
+/* СТУДИЯ - НАША КОМАНДА*/
+.teams {
+    background-color: var(--color-background-grey);
+}
+.teams__card {
+    display: flex;
+}
+.teams__photo {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+        &:not(:last-child) {
+            margin-right: 30px;
+            }
+}
+.teams__text {
+    text-align: center;
+    padding: 30px 32px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--color-white);
+}
+.teams__person {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.teams__position {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--color-accent-grey)
+}

@@ -1,0 +1,107 @@
+/* НИЖНЯЯ ПАНЕЛЬ */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: var(--color-white);
+    background-color: var(--color-background-black);
+}
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+}
+/* Нижняя панель контакты */
+.footer__list {
+    display: block;
+    margin-right: 70px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    width: 231px;
+}
+.footer__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+        }
+}
+.footer__link {
+    text-decoration: none;
+    font-family: inherit;
+    color: var(--color-secondary-grey-footer);
+    transition: 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--color-main-blue);
+            transition: color 250ms var(--timing-function);
+            }
+}
+/* Нижняя панель призыв */
+.appeal {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+.social__footer {
+margin-right: 93px;
+}
+.social__list {
+    &:not(:last-child) {
+        margin-right: 10px;
+        }
+}
+.social-footer__link {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            background-color: var( --color-main-blue);
+            color: var(--color-white);
+            }
+}
+.social-footer__icon {
+    fill: currentColor;
+        &:hover {
+            fill: currentColor;
+            }
+}
+/* Нижняя панель подписка */
+.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-email__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: inherit;
+    color: var(--color-white);
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+.send-email__botton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+.send-email__icon {
+    margin-left: 10px;
+    fill: currentColor;
+        &:hover,
+        &:focus {
+            fill: currentColor;
+            }
+}

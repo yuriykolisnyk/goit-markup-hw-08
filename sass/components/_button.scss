@@ -1,0 +1,24 @@
+/* ОБЩИЕ СТИЛИ ДЛЯ КНОПОК*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-main-blue);
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var(--colot-secondary-blue);
+            box-shadow: var(--color-box-shadow-button);
+            }
+}

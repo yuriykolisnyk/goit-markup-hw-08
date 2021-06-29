@@ -1,0 +1,33 @@
+/* СТУДИЯ - НАШИ КЛИЕНТЫ*/
+.client__list { 
+    display: flex;
+}
+.client__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+}
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--color-icon-grey);
+    border: 1px solid var(--color-icon-grey);
+    border-radius: 4px;
+    transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--color-main-blue);
+            border: 1px solid var(--color-main-blue);
+            }
+}
+.client__icon {
+    fill: currentColor;
+        &:hover,
+        &:focus {
+            fill: currentColor;
+            }
+}
