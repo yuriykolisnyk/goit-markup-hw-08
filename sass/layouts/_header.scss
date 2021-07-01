@@ -5,21 +5,77 @@
 .header__flex{
     display: flex;
     align-items: center;
+    position: relative;
+    
 }
 .header__list {
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-    @media screen and (max-width: 768px) {
-        display: none; 
-        }
+    display: none;
+    @media screen and (min-width: 768px) {    
+        display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+    }
 }
-.header__item {
+
+
+
+
+.header__button-menu {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    margin-left: 276px;
+}    
+.header__button-menu--icon {
+    &:hover,
+    &:focus {
+        fill: var(--color-main-blue);
+    }
+}
+.icon-menu-close {
+    display: none;
+}
+.js-open-menu .icon-menu-close {
+    display: block;
+}
+.js-open-menu .icon-menu {
+    display: none;
+}
+.header__menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    background-color: turquoise;
+    transform: translateX(100%);
+}
+.js-open-menu .header__menu-container {
+    transform: translateX(0);
+}
+
+
+
+
+
+
+.header__item--nav {
     &:not(:last-child) {
-        margin-right: 50px;
-        }
+        margin-right: 50px;          
+    }       
 }
+.header__item--tab {
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+        margin-right: 50px;
+        }  
+    } 
+}
+
 .header__link {
     display: block;
     padding-top: 32px;
@@ -50,12 +106,23 @@
 }
 .header__address {
     margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        font-size: 12px;
+    }
 }
 .header__link--grey {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-accent-grey);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
 }
 .header__icon {
     fill: currentColor;

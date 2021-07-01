@@ -4,15 +4,24 @@
 }
 .teams__card {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 .teams__photo {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-        &:not(:last-child) {
-            margin-right: 30px;
-            }
+    width: calc((100% - 1 * 30px) / 1);
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+    }
 }
 .teams__text {
     text-align: center;

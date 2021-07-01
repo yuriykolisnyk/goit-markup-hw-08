@@ -1,8 +1,9 @@
 /* СТУДИЯ - НАШИ РЕШЕНИЯ*/
 .solutions {
     padding-top: 0;
-    @media screen and (max-width: 1200px) {
-       display: none; 
+    display: none; 
+    @media screen and (min-width: 1200px) {
+    display: block; 
     }
 }
 .solutions__item {

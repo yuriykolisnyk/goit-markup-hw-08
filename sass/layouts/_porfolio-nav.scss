@@ -2,11 +2,16 @@
 /* КНОПКИ НА ПРИМЕРЫ РАБОТ */
 .porfolio-nav {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1200px){
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;  
+    }  
 }
 .porfolio-nav__item {
+    margin-bottom: 15px;
     &:not(:last-child) {
         margin-right: 8px;
         }
