@@ -1,0 +1,99 @@
+/* МОБИЛЬНОЕ МЕНЮ */
+.header__button-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}    
+.header__button-menu--icon {
+    &:hover,
+    &:focus {
+        fill: var(--color-main-blue);
+    }
+}
+.header__menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    text-align: left;
+    background-color: var(--color-white);
+    @media screen and (min-width: 768px) {
+        display: none;
+        }
+}
+.header__menu-container.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-decoration: none;
+}
+.mobile-menu__item,
+.mobile-contacts__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+        } 
+}
+.mobile-menu__link {
+    text-decoration: none;
+    color: var(--color-black-text);
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;    
+    &:hover,
+    &:focus {
+            color: var(--color-main-blue);
+            }
+}
+.mobile-contacts__link--phone {
+    text-decoration: none;
+    color: var(--color-main-blue);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+}
+.mobile-contacts__link--email {
+    text-decoration: none;
+    color: var(--color-accent-grey);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.67;
+}
+.mobile-social {
+    display: flex;
+    margin-top: 64px;
+}
+.mobile-social__item {
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);   
+    }
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+.mobile-social__link {
+    text-decoration: none;
+    color: var(--color-main-blue);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    padding-right: 10px;
+    &:not(:last-child) {
+        padding-right: 10px;
+        }
+}
