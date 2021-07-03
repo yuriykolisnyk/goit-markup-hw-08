@@ -151,15 +151,15 @@
                 <h2 class="subtitle">Чем мы занимаемся</h2>
                     <ul class="solutions__item">
                         <li class="solutions__image">
-                            <img src="./images/doing1.jpg" alt="фото решений для ПК" width="370" />
+                            <img srcset="./images/doing1-pc-x1.jpg 1x, ./images/doing1-pc-x2.jpg 2x" src="./images/doing1-pc-x1.jpg" alt="фото решений для ПК" width="370" />
                             <p class="solutions__text">Десктопные приложения</p>
                         </li>
                         <li class="solutions__image">
-                            <img src="./images/doing2.jpg" alt="фото решений для мобильных телефонов" width="370" />
+                            <img srcset="./images/doing2-pc-x1.jpg 1x, ./images/doing2-pc-x2.jpg 2x" src="./images/doing2-pc-x1.jpg" alt="фото решений для мобильных телефонов" width="370" />
                             <p class="solutions__text">Мобильные приложения</p>
                         </li>
                         <li class="solutions__image">
-                            <img src="./images/doing3.jpg" alt="фото решений для планшетов" width="370" />
+                            <img srcset="./images/doing3-pc-x1.jpg 1x, ./images/doing3-pc-x2.jpg 2x" src="./images/doing3-pc-x1.jpg" alt="фото решений для планшетов" width="370" />
                             <p class="solutions__text">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -171,7 +171,12 @@
                 <h2 class="subtitle">Наша команда</h2>
                     <ul class="teams__card">
                         <li class="teams__photo">
-                            <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="270" /> 
+                            <picture>
+                                <source srcset="./images/igor-pc-x1.jpg 1x, ./images/igor-pc-x2.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/igor-tab-x1.jpg 1x, ./images/igor-tab-x2.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/igor-mob-x1.jpg 1x, ./images/igor-mob-x2.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/igor-mob-x1.jpg" alt="фото Игорь Демьяненко" width="450" /> 
+                            </picture>                         
                                 <div class="teams__text">
                                     <h3 class="teams__person">Игорь Демьяненко</h3>
                                     <p class="teams__position">Product Designer</p>
@@ -208,7 +213,12 @@
                                 </div>
                         </li>
                         <li class="teams__photo">
-                            <img src="./images/olga.jpg" alt="фото Ольга Репина" width="270" /> 
+                            <picture>
+                                <source srcset="./images/olga-pc-x1.jpg 1x, ./images/olga-pc-x2.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/olga-tab-x1.jpg 1x, ./images/olga-tab-x2.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/olga-mob-x1.jpg 1x, ./images/olga-mob-x2.jpg 2x" media="(min-width: 480px)">
+                                <img  src="./images/olga-mob-x1.jpg" alt="фото Ольга Репина" width="450" /> 
+                            </picture>
                                 <div class="teams__text">
                                     <h3 class="teams__person">Ольга Репина</h3>
                                     <p class="teams__position">Frontend Developer</p>
@@ -245,7 +255,12 @@
                                 </div>
                         </li>
                         <li class="teams__photo">
-                            <img src="./images/nicholas.jpg" alt="фото Николай Тарасов" width="270" /> 
+                            <picture>
+                                <source  srcset="./images/nicholas-pc-x1.jpg 1x, ./images/nicholas-pc-x2.jpg 2x"media="(min-width: 1200px)">
+                                <source  srcset="./images/nicholas-tab-x1.jpg 1x, ./images/nicholas-tab-x2.jpg 2x" media="(min-width: 768px)">
+                                <source  srcset="./images/nicholas-mob-x1.jpg 1x, ./images/nicholas-mob-x2.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/nicholas-mob-x1.jpg" alt="фото Николай Тарасов" width="450" />
+                            </picture>                           
                                 <div class="teams__text">       
                                     <h3 class="teams__person">Николай Тарасов</h3>
                                     <p class="teams__position">Marketing</p>
@@ -282,7 +297,12 @@
                                 </div> 
                         </li>
                         <li class="teams__photo">
-                            <img src="./images/michail.jpg" alt="фото Михаил Ермаков" width="270" /> 
+                            <picture>
+                                <source  srcset="./images/michail-pc-x1.jpg 1x, ./images/michail-pc-x2.jpg 2x"media="(min-width: 1200px)">
+                                <source  srcset="./images/michail-tab-x1.jpg 1x, ./images/michail-tab-x2.jpg 2x" media="(min-width: 768px)">
+                                <source  srcset="./images/michail-mob-x1.jpg 1x, ./images/michail-mob-x2.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/michail-mob-x1.jpg" alt="фото Михаил Ермаков" width="450" />
+                            </picture>
                                 <div class="teams__text">
                                     <h3 class="teams__person">Михаил Ермаков</h3>
                                     <p class="teams__position">UI Designer</p>
