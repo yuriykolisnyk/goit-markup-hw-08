@@ -17,7 +17,6 @@
         line-height: 1.17;
     }
 }
-
 .header__item--nav {
     &:not(:last-child) {
         margin-right: 50px;          
@@ -74,9 +73,19 @@
     justify-content: center;
     align-items: center;
     color: var(--color-accent-grey);
+}
+.header__link--tab-mail {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 10px;
+        padding-top: 21px;
+        margin-bottom: 10px; 
     }
+ 
+}
+.header__link--tab-tel {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 21px;
+    }
+    
 }
 .header__icon {
     fill: currentColor;

@@ -1,13 +1,17 @@
 .checkbox {
     display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.66;
     letter-spacing: 0.03em;
     color: var(--color-accent-grey);
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.71;
+    } 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.71;
