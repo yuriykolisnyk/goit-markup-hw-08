@@ -16,13 +16,14 @@
             <a href=" " class="logo logo__header"> <span class="logo__header--blue">Web</span>Studio</a>
             <nav>
                <!-- МОБИЛЬНОЕ ОКНО -->
-                    <button type="button" class="header__button-menu" js-open-menu>
+                <div class="menu">
+                    <button type="button" class="header__button-menu" js-menu-open>
                         <svg class="header__button-menu--icon" width="40" height="40">
                             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                         </svg>
                     </button>
                     <div class="header__menu-container is-hidden" js-menu-container>                       
-                        <button type="button" class="header__button-menu" js-close-menu>
+                        <button type="button" class="header__button-menu" js-menu-close>
                             <svg class="header__button-menu--icon" width="40" height="40" >
                                 <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
                             </svg>
@@ -65,9 +66,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 
-
-
                 <ul class="header__list">
                     <li class="header__item header__item--nav"> <a href="./index.html " class="header__link header__link--current">Студия</a> </li>
                     <li class="header__item header__item--nav"> <a href="./portfolio.html" class="header__link">Портфолио</a> </li>
@@ -256,7 +256,7 @@
                         </li>
                         <li class="teams__photo">
                             <picture>
-                                <source  srcset="./images/nicholas-pc-x1.jpg 1x, ./images/nicholas-pc-x2.jpg 2x"media="(min-width: 1200px)">
+                                <source  srcset="./images/nicholas-pc-x1.jpg 1x, ./images/nicholas-pc-x2.jpg 2x" media="(min-width: 1200px)">
                                 <source  srcset="./images/nicholas-tab-x1.jpg 1x, ./images/nicholas-tab-x2.jpg 2x" media="(min-width: 768px)">
                                 <source  srcset="./images/nicholas-mob-x1.jpg 1x, ./images/nicholas-mob-x2.jpg 2x" media="(min-width: 480px)">
                                 <img src="./images/nicholas-mob-x1.jpg" alt="фото Николай Тарасов" width="450" />
@@ -298,7 +298,7 @@
                         </li>
                         <li class="teams__photo">
                             <picture>
-                                <source  srcset="./images/michail-pc-x1.jpg 1x, ./images/michail-pc-x2.jpg 2x"media="(min-width: 1200px)">
+                                <source  srcset="./images/michail-pc-x1.jpg 1x, ./images/michail-pc-x2.jpg 2x" media="(min-width: 1200px)">
                                 <source  srcset="./images/michail-tab-x1.jpg 1x, ./images/michail-tab-x2.jpg 2x" media="(min-width: 768px)">
                                 <source  srcset="./images/michail-mob-x1.jpg 1x, ./images/michail-mob-x2.jpg 2x" media="(min-width: 480px)">
                                 <img src="./images/michail-mob-x1.jpg" alt="фото Михаил Ермаков" width="450" />
