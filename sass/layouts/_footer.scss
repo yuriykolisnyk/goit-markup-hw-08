@@ -32,12 +32,16 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         width: 231px;
         margin-right: 70px;
-        margin-bottom: 0;
     }
+}
+.footer__tablet--margin {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+}
 }
 .footer__item {
     &:not(:last-child) {
@@ -68,11 +72,11 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;  
 }
-.social__footer {
+.appeal-margin {
     margin-bottom: 60px;
     @media screen and (min-width: 1200px) { 
-    margin-right: 93px;
     margin-bottom: 0;
+    margin-right: 93px;
     }
 }
 .social__list {

@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 400ms Var(--timing-function);
     height: 609px;
-    width: 290px;
+    width: calc((100% - 1 * 30px) / 1);
     padding: 10px;
     padding-top: 30px;
     border-radius: 4px;

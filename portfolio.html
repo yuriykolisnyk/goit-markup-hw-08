@@ -17,13 +17,14 @@
             <nav>
                <!-- МОБИЛЬНОЕ ОКНО -->
                 <div class="menu">
-                    <button type="button" class="header__button-menu" js-menu-open>
+                    <button type="button" class="header__button-menu js-open-menu"
+                        aria-expanded="false" aria-controls="mobile-menu">
                         <svg class="header__button-menu--icon" width="40" height="40">
                             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                         </svg>
                     </button>
-                    <div class="header__menu-container is-hidden" js-menu-container>                       
-                        <button type="button" class="header__button-menu" js-menu-close>
+                    <div class="header__menu-container js-menu-container" id="mobile-menu">                       
+                        <button type="button" class="header__button-menu menu-toggle js-close-menu">
                             <svg class="header__button-menu--icon" width="40" height="40" >
                                 <use class="icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
                             </svg>
@@ -91,7 +92,7 @@
                     </li>
                 </ul>
         </div>
-    </header>    
+    </header>  
     <main>
     <!-- ПОРТФОЛИО -->
     <!-- <h1>Портфолио</h1>-->
@@ -301,7 +302,7 @@
                     </address>
                 </div>
                 <!-- Нижняя панель призыв -->
-                <div>
+                <div class="appeal-margin">
                     <p class="appeal">присоединяйтесь</p>
                     <ul class="social social__footer">
                         <li class="social__list">
