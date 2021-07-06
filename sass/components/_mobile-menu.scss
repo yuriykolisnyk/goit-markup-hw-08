@@ -44,7 +44,7 @@
     text-decoration: none;
 }
 .mobile-menu__item,
-.mobile-contacts__item { 
+.mobile-contacts__item {  
     &:not(:last-child) {
         margin-bottom: 32px;
         } 
@@ -55,7 +55,7 @@
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 40px;
-    line-height: 1.175;   
+    line-height: 1.175;  
     &:hover,
     &:focus {
             color: var(--color-main-blue);

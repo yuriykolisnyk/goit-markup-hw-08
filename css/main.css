@@ -1525,7 +1525,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 10px 10px;
   background-color: var(--color-background-overlay-blue);
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -1534,11 +1534,23 @@ img {
   transition: 250ms var(--timing-function);
 }
 
+@media screen and (min-width: 480px) {
+  .project__overlay-background {
+    padding: 63px 24px;
+  }
+}
+
 .project__overlay-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: var(--color-white);
+}
+
+@media screen and (min-width: 480px) {
+  .project__overlay-text {
+    font-size: 18px;
+  }
 }
 
 .project__box-shadow:hover .project__overlay-background,
